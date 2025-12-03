@@ -8,7 +8,7 @@ export default function Header() {
   const t = useTranslations("Header");
 
   return (
-    <header className="border-border/40 bg-background/80 sticky top-4 z-50 mb-16 flex items-center justify-between border-b px-0 py-3 backdrop-blur-md transition-all">
+    <header className="border-border/40 bg-background/80 sticky top-0 z-50 mb-16 flex items-center justify-between border-b px-0 py-3 backdrop-blur-md transition-all">
       <Link
         href="/"
         className="text-foreground hover:text-primary font-serif text-2xl font-bold tracking-tight transition-colors"
