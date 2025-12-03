@@ -1,0 +1,43 @@
+---
+title: "IDX Daily"
+description: "IDX Daily is a command line tool for downloading daily stock summary data (Ringkasan Saham) from the Indonesia Stock Exchange and storing it locally."
+date: "2023-10-27"
+category: ["CLI Tool", "Finance", "Indonesia"]
+summary: "A CLI tool for Indonesia Stock Exchange data download"
+readTime: "5 min read"
+author: "Dwi"
+githubUrl: "https://github.com/yourusername/idx-daily"
+demoUrl: "https://github.com/yourusername/idx-daily/releases"
+---
+
+## Features
+
+- Straightforward CLI prompts for start date, end date, and confirmation
+- Validates date inputs and rejects future dates
+- Skips weekends automatically
+- Supports connecting to your Chrome browser to assist the download
+- Saves files using the date-based filename format `YYYY-MM-DD.xlsx`
+
+## How to Use
+
+1. Download `idxdaily.rar` and extract it
+2. Configure the `config.toml`
+
+```toml
+[base]
+# Path to Chrome.exe
+chrome_dir = "C:/Program Files/Google/Chrome/Application/chrome.exe"
+
+# Output folder for downloaded files
+output_dir = "C:/Users/your_name/Downloads/output/"
+```
+
+3. Double-click the `.exe` to launch the app
+4. Use the **"Launch Chrome"** option to start a browser session
+5. Choose a start and end date when prompted
+6. Review the confirmation table for date range and total workdays
+7. Confirm to start the download
+8. The resulting Excel files will be saved to your configured `output_dir`
+
+> **Note:**
+> Make sure `app.py` and `config.toml` are in the same folder so the app can read your configuration.

@@ -1,0 +1,43 @@
+---
+title: "IDX Daily"
+description: "IDX Daily adalah alat baris perintah (CLI) untuk mengunduh data ringkasan saham harian dari Bursa Efek Indonesia dan menyimpannya secara lokal."
+date: "2023-10-27"
+category: ["Alat CLI", "Keuangan", "Indonesia"]
+summary: "Alat CLI untuk unduh data Bursa Efek Indonesia"
+readTime: "5 min read"
+author: "Dwi"
+githubUrl: "https://github.com/yourusername/idx-daily"
+demoUrl: "https://github.com/yourusername/idx-daily/releases"
+---
+
+## Fitur
+
+- CLI yang mudah digunakan untuk input tanggal mulai, tanggal akhir, dan konfirmasi
+- Validasi input tanggal dan menolak tanggal di masa depan
+- Melewati akhir pekan secara otomatis
+- Mendukung koneksi ke browser Chrome Anda untuk membantu proses pengunduhan
+- Menyimpan file menggunakan format nama file berbasis tanggal `YYYY-MM-DD.xlsx`
+
+## Cara Penggunaan
+
+1. Unduh `idxdaily.rar` dan ekstrak
+2. Konfigurasi `config.toml`
+
+```toml
+[base]
+# Path ke Chrome.exe
+chrome_dir = "C:/Program Files/Google/Chrome/Application/chrome.exe"
+
+# Folder output untuk file yang diunduh
+output_dir = "C:/Users/nama_anda/Downloads/output/"
+```
+
+3. Klik dua kali `.exe` untuk menjalankan aplikasi
+4. Gunakan opsi **"Launch Chrome"** untuk memulai sesi browser
+5. Pilih tanggal mulai dan tanggal akhir saat diminta
+6. Tinjau tabel konfirmasi untuk rentang tanggal dan total hari kerja
+7. Konfirmasi untuk memulai pengunduhan
+8. File Excel yang dihasilkan akan disimpan di `output_dir` yang telah dikonfigurasi
+
+> **Catatan:**
+> Pastikan `app.py` dan `config.toml` berada dalam folder yang sama agar aplikasi dapat membaca konfigurasi Anda.

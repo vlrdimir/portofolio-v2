@@ -2,8 +2,11 @@
 
 import Link from "next/link";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
+  const t = useTranslations("Header");
+
   return (
     <header className="border-border/40 bg-background/80 sticky top-4 z-50 mb-16 flex items-center justify-between border-b px-0 py-3 backdrop-blur-md transition-all">
       <Link
@@ -17,19 +20,19 @@ export default function Header() {
           href="/projects"
           className="hover:text-primary hover:decoration-primary transition-colors hover:underline hover:decoration-wavy"
         >
-          Projects
+          {t("projects")}
         </Link>
         <Link
           href="/now"
           className="hover:text-primary hover:decoration-primary transition-colors hover:underline hover:decoration-wavy"
         >
-          Now
+          {t("now")}
         </Link>
         <Link
           href="/about"
           className="hover:text-primary hover:decoration-primary transition-colors hover:underline hover:decoration-wavy"
         >
-          About
+          {t("about")}
         </Link>
         <LanguageSwitcher />
       </nav>

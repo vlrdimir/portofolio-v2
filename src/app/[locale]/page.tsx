@@ -1,73 +1,54 @@
-import Link from "next/link";
+"use client";
+
 import { Github } from "lucide-react";
 import AnimatedLink from "@/components/AnimatedLink";
+import { useTranslations } from "next-intl";
+
+const Highlight = ({ children }: { children: React.ReactNode }) => (
+  <span className="text-primary font-serif font-medium italic">{children}</span>
+);
 
 export default function Portfolio() {
+  const t = useTranslations("HomePage");
+
   return (
     <>
       {/* Welcome Section */}
       <section className="mb-20">
         <h1 className="mb-8 font-serif text-4xl font-bold tracking-tight md:text-5xl">
-          Welcome<span className="text-primary">.</span>
+          {t("title")}
+          <span className="text-primary">.</span>
         </h1>
 
         <div className="text-foreground space-y-6 leading-relaxed">
-          <p className="text-lg">Hello, I&apos;m Dwi 👋</p>
-          <p>
-            Welcome to my corner of the web. I write about programming and
-            automation, building useful apps, working with data, and exploring
-            finance and technology.
-          </p>
-          <p>
-            If you come across something useful or interesting, feel free to
-            share it and let me know. I&apos;d love your feedback.
-          </p>
+          <p className="text-lg">{t("greeting")}</p>
+          <p>{t("intro1")}</p>
+          <p>{t("intro2")}</p>
         </div>
       </section>
 
       {/* Journey Section */}
       <section className="mb-24" id="projects">
         <h2 className="mb-8 font-serif text-2xl font-bold tracking-tight">
-          Journey<span className="text-primary">.</span>
+          {t("journeyTitle")}
+          <span className="text-primary">.</span>
         </h2>
         {/* Replaced list format with a narrative storytelling approach */}
         <div className="text-foreground space-y-6 leading-relaxed">
           <p>
-            My journey began in Depok, Indonesia in 2003. My curiosity for code
-            sparked in 2020 with{" "}
-            <span className="text-primary font-serif font-medium italic">
-              PHP Native
-            </span>
-            , quickly expanding to{" "}
-            <span className="text-primary font-serif font-medium italic">
-              JavaScript
-            </span>{" "}
-            the following year.
+            {t.rich("journey1", {
+              phpNative: (chunks) => <Highlight>{chunks}</Highlight>,
+              javascript: (chunks) => <Highlight>{chunks}</Highlight>,
+            })}
           </p>
           <p>
-            By 2022, I was diving deep into the modern web ecosystem, mastering{" "}
-            <span className="text-primary font-serif font-medium italic">
-              Tailwind CSS
-            </span>
-            ,{" "}
-            <span className="text-primary font-serif font-medium italic">
-              React
-            </span>
-            , and{" "}
-            <span className="text-primary font-serif font-medium italic">
-              Git
-            </span>
-            . In 2023, I ventured into the world of Web3, experimenting with{" "}
-            <span className="text-primary font-serif font-medium italic">
-              automation bots
-            </span>{" "}
-            to streamline blockchain airdrop tasks. Currently, I&apos;m
-            deepening my theoretical understanding as a Computer Science student
-            at{" "}
-            <span className="text-primary font-serif font-medium italic">
-              Bina Sarana Informatika
-            </span>
-            .
+            {t.rich("journey2", {
+              tailwind: (chunks) => <Highlight>{chunks}</Highlight>,
+              react: (chunks) => <Highlight>{chunks}</Highlight>,
+              git: (chunks) => <Highlight>{chunks}</Highlight>,
+              automationBots: (chunks) => <Highlight>{chunks}</Highlight>,
+              university: (chunks) => <Highlight>{chunks}</Highlight>,
+            })}
           </p>
         </div>
       </section>
@@ -77,14 +58,11 @@ export default function Portfolio() {
       {/* What's Next Section */}
       <section>
         <h2 className="mb-6 font-serif text-2xl font-bold tracking-tight">
-          Let&apos;s Connect<span className="text-primary">.</span>
+          {t("connectTitle")}
+          <span className="text-primary">.</span>
         </h2>
         <div className="text-foreground space-y-6">
-          <p className="leading-relaxed">
-            I&apos;m always open to interesting projects and collaborations.
-            Whether you have a question, want to discuss an idea, or just say
-            hello, feel free to reach out.
-          </p>
+          <p className="leading-relaxed">{t("connectDescription")}</p>
 
           <div className="grid gap-4 sm:grid-cols-2">
             <AnimatedLink
@@ -108,10 +86,10 @@ export default function Portfolio() {
               </div>
               <div>
                 <div className="text-foreground font-serif font-medium">
-                  Email Me
+                  {t("emailTitle")}
                 </div>
                 <div className="text-muted-foreground font-mono text-sm">
-                  Get in touch
+                  {t("emailSubtitle")}
                 </div>
               </div>
             </AnimatedLink>
@@ -127,10 +105,10 @@ export default function Portfolio() {
               </div>
               <div>
                 <div className="text-foreground font-serif font-medium">
-                  GitHub
+                  {t("githubTitle")}
                 </div>
                 <div className="text-muted-foreground font-mono text-sm">
-                  Check my code
+                  {t("githubSubtitle")}
                 </div>
               </div>
             </AnimatedLink>
@@ -152,10 +130,10 @@ export default function Portfolio() {
               </div>
               <div>
                 <div className="text-foreground font-serif font-medium">
-                  LinkedIn
+                  {t("linkedinTitle")}
                 </div>
                 <div className="text-muted-foreground font-mono text-sm">
-                  Let&apos;s network
+                  {t("linkedinSubtitle")}
                 </div>
               </div>
             </AnimatedLink>
@@ -177,10 +155,10 @@ export default function Portfolio() {
               </div>
               <div>
                 <div className="text-foreground font-serif font-medium">
-                  Telegram
+                  {t("telegramTitle")}
                 </div>
                 <div className="text-muted-foreground font-mono text-sm">
-                  Get in touch
+                  {t("telegramSubtitle")}
                 </div>
               </div>
             </AnimatedLink>

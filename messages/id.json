@@ -1,0 +1,73 @@
+{
+  "Header": {
+    "projects": "Proyek",
+    "now": "Saat Ini",
+    "about": "Tentang"
+  },
+  "HomePage": {
+    "title": "Selamat Datang",
+    "greeting": "Halo, saya Dwi 👋",
+    "intro1": "Selamat datang di laman web saya. Di sini saya menulis tentang pemrograman, otomasi, membangun aplikasi yang bermanfaat, mengolah data, dan mengeksplorasi teknologi.",
+    "intro2": "Jika ada hal yang menarik atau bermanfaat bagi Anda, silakan bagikan dan beri tahu saya. Masukan Anda sangat berharga bagi saya.",
+    "journeyTitle": "Perjalanan",
+    "journey1": "Perjalanan saya bermula di Depok, Indonesia pada tahun 2003. Ketertarikan saya pada koding dimulai tahun 2020 dengan <phpNative>PHP Native</phpNative>, dan berkembang pesat ke <javascript>JavaScript</javascript> setahun kemudian.",
+    "journey2": "Pada 2022, saya mendalami ekosistem web modern, menguasai <tailwind>Tailwind CSS</tailwind>, <react>React</react>, dan <git>Git</git>. Di tahun 2023, saya menjelajahi Web3 dan bereksperimen dengan <automationBots>bot otomasi</automationBots> untuk mempermudah tugas airdrop blockchain. Kini, saya sedang memperdalam pemahaman teoritis sebagai mahasiswa Ilmu Komputer di <university>Bina Sarana Informatika</university>.",
+    "connectTitle": "Mari Terhubung",
+    "connectDescription": "Saya selalu terbuka untuk kolaborasi dan proyek menarik. Jika Anda punya pertanyaan, ide untuk didiskusikan, atau sekadar ingin menyapa, jangan ragu untuk menghubungi saya.",
+    "emailTitle": "Email Saya",
+    "emailSubtitle": "Kirim pesan",
+    "githubTitle": "GitHub",
+    "githubSubtitle": "Lihat kode saya",
+    "linkedinTitle": "LinkedIn",
+    "linkedinSubtitle": "Mari berjejaring",
+    "telegramTitle": "Telegram",
+    "telegramSubtitle": "Hubungi saya"
+  },
+  "AboutPage": {
+    "title": "Tentang Saya",
+    "bio1": "Perkenalkan, nama saya <name>Dwi Okta Djoas</name>. Saya senang membuat aplikasi web yang rapi dan efisien, serta bereksperimen dengan teknologi baru. Saat ini saya berkuliah di jurusan Ilmu Komputer <university>Bina Sarana Informatika</university>, sambil mengerjakan berbagai proyek pengembangan full-stack.",
+    "bio2": "Di sini Anda akan menemukan kumpulan proyek saya, catatan pembelajaran, dan cerita perjalanan koding saya. Website ini membantu saya menata pikiran, memantau progres, dan semoga bisa menghubungkan saya dengan teman-teman yang memiliki minat sama di bidang pengembangan perangkat lunak.",
+    "bio3": "Di luar koding, saya mengisi waktu dengan bermain game kompetitif, mengeksplorasi teknologi terkini, dan mengikuti perkembangan industri. Saya sangat menghargai proses belajar yang berkelanjutan dan mencari inspirasi dari berbagai sumber di dunia teknologi.",
+    "bio4": "Saya ingin ruang ini terasa terbuka dan ramah untuk siapa saja. Jika ada pertanyaan, ajakan kolaborasi, atau sekadar ingin mengobrol soal teknologi, silakan hubungi saya via <telegram>Telegram</telegram>.",
+    "telegram": "Telegram",
+    "bio5": "Terima kasih telah meluangkan waktu untuk melihat karya saya dan mengenal saya lebih jauh.",
+    "connectTitle": "Terhubung",
+    "githubTitle": "GitHub",
+    "githubSubtitle": "Lihat kode saya",
+    "linkedinTitle": "LinkedIn",
+    "linkedinSubtitle": "Mari berjejaring",
+    "telegramTitle": "Telegram",
+    "telegramSubtitle": "Hubungi saya",
+    "emailTitle": "Email",
+    "emailSubtitle": "Kirim pesan"
+  },
+  "ProjectsPage": {
+    "title": "Proyek",
+    "description": "Berikut adalah beberapa proyek terbaru yang saya kerjakan. Setiap proyek menjadi sarana belajar dan langkah maju dalam meningkatkan keterampilan saya.",
+    "project1Name": "Website Portfolio",
+    "project1Description": "Website portfolio pribadi untuk menampilkan proyek dan keahlian saya. Dibangun menggunakan teknologi web modern dan praktik terbaik.",
+    "project2Name": "Bot Otomasi",
+    "project2Description": "Bot otomasi untuk mengerjakan tugas airdrop blockchain. Membantu efisiensi dengan menangani tugas-tugas yang repetitif.",
+    "project3Name": "Pengembangan Game",
+    "project3Description": "Proyek pengembangan game untuk mengeksplorasi mekanik permainan dan interaksi pemain. Dibuat menggunakan Unity dan C#.",
+    "githubLabel": "GitHub",
+    "externalLabel": "Tautan Luar",
+    "backToProjects": "Kembali ke proyek"
+  },
+  "NowPage": {
+    "title": "Aktivitas Saat Ini",
+    "updated": "Diperbarui: 19 November 2025",
+    "activity1": "Bersantai sejenak dengan game kompetitif seperti <valorant>Valorant</valorant> di waktu luang untuk menjaga keseimbangan hidup dan kerja.",
+    "activity2": "Fokus pada perkuliahan di <university>Bina Sarana Informatika</university> dan persiapan untuk ujian mendatang.",
+    "activity3": "Mengeksplorasi <blockchain>ekosistem Blockchain</blockchain> dan berburu airdrop untuk kesenangan sembari belajar tentang keuangan terdesentralisasi (DeFi).",
+    "activity4": "Mendalami praktik <devops>DevOps</devops>, terutama fokus pada GitHub Actions, pipeline CI/CD, dan containerisasi dengan Docker.",
+    "techStackTitle": "Tech Stack",
+    "techStackDescription": "Berikut adalah teknologi dan tools yang saya gunakan atau sedang saya pelajari:",
+    "tech1": "Menggunakan teknologi <frontend>Frontend</frontend> seperti Next.js, React, TypeScript, dan Tailwind CSS untuk membangun aplikasi web modern.",
+    "tech2": "Menggunakan <elysia>ElysiaJS</elysia> untuk backend, yang semakin saya sukai bersama <bun>Bun</bun>, serta <drizzle>Drizzle ORM</drizzle> dan database MySQL/Postgres.",
+    "tech3": "Menjalankan <arch>Arch Linux</arch> dengan <hyprland>Hyprland</hyprland> sebagai lingkungan kerja utama saya."
+  },
+  "Footer": {
+    "copyright": "© {year} Dwi. Hak cipta dilindungi."
+  }
+}

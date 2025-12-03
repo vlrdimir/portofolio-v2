@@ -1,61 +1,54 @@
+"use client";
+
 import Link from "next/link";
 import { Github, Linkedin } from "lucide-react";
 import AnimatedLink from "@/components/AnimatedLink";
+import { useTranslations } from "next-intl";
 
 export default function About() {
+  const t = useTranslations("AboutPage");
+
   return (
     <section>
       <h1 className="mb-4 font-mono text-4xl font-bold md:text-5xl">
-        About Me<span className="text-red-500">.</span>
+        {t("title")}
+        <span className="text-red-500">.</span>
       </h1>
 
       <div className="mb-12 space-y-6 leading-relaxed text-neutral-800">
         <p>
-          My name is <strong>Dwi Okta Djoas</strong>. I enjoy building clean,
-          efficient web applications and experimenting with new technologies.
-          I&apos;m currently a Computer Science student at {""}
-          <strong>Bina Sarana Informatika</strong>, balancing my studies with
-          full-stack development projects.
+          {t.rich("bio1", {
+            name: (chunks) => <strong>{chunks}</strong>,
+            university: (chunks) => <strong>{chunks}</strong>,
+          })}
         </p>
 
-        <p>
-          Here you&apos;ll find a collection of my projects, notes on what
-          I&apos;m learning, and reflections on my coding adventures. This space
-          helps me organize my thoughts, track my progress over time, and
-          hopefully connect with others who share similar interests in software
-          development.
-        </p>
+        <p>{t("bio2")}</p>
+
+        <p>{t("bio3")}</p>
 
         <p>
-          Beyond coding, I spend my time diving into competitive gaming,
-          exploring emerging technologies, and staying updated with industry
-          developments. I value continuous learning and finding inspiration from
-          various sources in the tech world.
+          {t.rich("bio4", {
+            telegram: (chunks) => (
+              <Link
+                href="https://t.me/repmybio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-neutral-900 underline decoration-neutral-300 transition-colors hover:decoration-neutral-600"
+              >
+                {chunks}
+              </Link>
+            ),
+          })}
         </p>
 
-        <p>
-          I designed this space to be open and inviting. If you have any
-          questions, want to collaborate, or just want to chat about tech, feel
-          free to reach out via{" "}
-          <Link
-            href="https://t.me/repmybio"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-medium text-neutral-900 underline decoration-neutral-300 transition-colors hover:decoration-neutral-600"
-          >
-            Telegram.
-          </Link>
-        </p>
-
-        <p>
-          I appreciate you taking the time to explore my work and learn more
-          about me.
-        </p>
+        <p>{t("bio5")}</p>
       </div>
 
       <div>
         <h2 className="mb-6 font-mono text-2xl font-bold">
-          Connect<span className="text-red-500">.</span>
+          {t("connectTitle")}
+          <span className="text-red-500">.</span>
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <AnimatedLink
@@ -69,10 +62,10 @@ export default function About() {
             </div>
             <div>
               <div className="text-foreground font-serif font-medium">
-                GitHub
+                {t("githubTitle")}
               </div>
               <div className="text-muted-foreground font-mono text-sm">
-                Check my code
+                {t("githubSubtitle")}
               </div>
             </div>
           </AnimatedLink>
@@ -88,10 +81,10 @@ export default function About() {
             </div>
             <div>
               <div className="text-foreground font-serif font-medium">
-                LinkedIn
+                {t("linkedinTitle")}
               </div>
               <div className="text-muted-foreground font-mono text-sm">
-                Let&apos;s network
+                {t("linkedinSubtitle")}
               </div>
             </div>
           </AnimatedLink>
@@ -113,10 +106,10 @@ export default function About() {
             </div>
             <div>
               <div className="text-foreground font-serif font-medium">
-                Telegram
+                {t("telegramTitle")}
               </div>
               <div className="text-muted-foreground font-mono text-sm">
-                Get in touch
+                {t("telegramSubtitle")}
               </div>
             </div>
           </AnimatedLink>
@@ -142,10 +135,10 @@ export default function About() {
             </div>
             <div>
               <div className="text-foreground font-serif font-medium">
-                Email
+                {t("emailTitle")}
               </div>
               <div className="text-muted-foreground font-mono text-sm">
-                Send a message
+                {t("emailSubtitle")}
               </div>
             </div>
           </AnimatedLink>

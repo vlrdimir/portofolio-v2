@@ -1,0 +1,75 @@
+{
+  "Header": {
+    "projects": "Projects",
+    "now": "Now",
+    "about": "About"
+  },
+  "HomePage": {
+    "title": "Welcome",
+    "greeting": "Hello, I'm Dwi 👋",
+    "intro1": "Welcome to my corner of the web. I write about programming and automation, building useful apps, working with data, and exploring technology.",
+    "intro2": "If you come across something useful or interesting, feel free to share it and let me know. I'd love your feedback.",
+    "journeyTitle": "Journey",
+    "journey1": "My journey began in Depok, Indonesia in 2003. My curiosity for code sparked in 2020 with <phpNative>PHP Native</phpNative>, quickly expanding to <javascript>JavaScript</javascript> the following year.",
+    "journey2": "By 2022, I was diving deep into the modern web ecosystem, mastering <tailwind>Tailwind CSS</tailwind>, <react>React</react>, and <git>Git</git>. In 2023, I ventured into the world of Web3, experimenting with <automationBots>automation bots</automationBots> to streamline blockchain airdrop tasks. Currently, I'm deepening my theoretical understanding as a Computer Science student at <university>Bina Sarana Informatika</university>.",
+
+    "connectTitle": "Let's Connect",
+    "connectDescription": "I'm always open to interesting projects and collaborations. Whether you have a question, want to discuss an idea, or just say hello, feel free to reach out.",
+    "emailTitle": "Email Me",
+    "emailSubtitle": "Get in touch",
+    "githubTitle": "GitHub",
+    "githubSubtitle": "Check my code",
+    "linkedinTitle": "LinkedIn",
+    "linkedinSubtitle": "Let's network",
+    "telegramTitle": "Telegram",
+    "telegramSubtitle": "Get in touch"
+  },
+  "AboutPage": {
+    "title": "About Me",
+    "bio1": "My name is <name>Dwi Okta Djoas</name>. I enjoy building clean, efficient web applications and experimenting with new technologies. I'm currently a Computer Science student at <university>Bina Sarana Informatika</university>, balancing my studies with full-stack development projects.",
+    "bio2": "Here you'll find a collection of my projects, notes on what I'm learning, and reflections on my coding adventures. This space helps me organize my thoughts, track my progress over time, and hopefully connect with others who share similar interests in software development.",
+    "bio3": "Beyond coding, I spend my time diving into competitive gaming, exploring emerging technologies, and staying updated with industry developments. I value continuous learning and finding inspiration from various sources in the tech world.",
+    "bio4": "I designed this space to be open and inviting. If you have any questions, want to collaborate, or just want to chat about tech, feel free to reach out via <telegram>Telegram</telegram>.",
+    "telegram": "Telegram",
+    "bio5": "I appreciate you taking the time to explore my work and learn more about me.",
+    "connectTitle": "Connect",
+    "githubTitle": "GitHub",
+    "githubSubtitle": "Check my code",
+    "linkedinTitle": "LinkedIn",
+    "linkedinSubtitle": "Let's network",
+    "telegramTitle": "Telegram",
+    "telegramSubtitle": "Get in touch",
+    "emailTitle": "Email",
+    "emailSubtitle": "Send a message"
+  },
+  "ProjectsPage": {
+    "title": "Projects",
+    "description": "Here are some of my recent projects. Each project represents a learning journey and a step forward in my development skills.",
+    "project1Name": "Portfolio Website",
+    "project1Description": "A personal portfolio website showcasing my projects and skills. Built with modern web technologies and best practices.",
+    "project2Name": "Automation Bot",
+    "project2Description": "An automation bot for blockchain airdrop tasks. Streamlines repetitive tasks and improves efficiency.",
+    "project3Name": "Game Development",
+    "project3Description": "A game development project exploring game mechanics and player interactions. Built with Unity and C#.",
+    "githubLabel": "GitHub",
+    "externalLabel": "External",
+    "backToProjects": "Back to projects"
+  },
+  "NowPage": {
+    "title": "What I'm doing now",
+    "updated": "Updated: November 19, 2025",
+    "activity1": "Unwinding with competitive games like <valorant>Valorant</valorant> during my free time to maintain a healthy work-life balance.",
+    "activity2": "Prioritizing my academic coursework at <university>Bina Sarana Informatika</university> and preparing for upcoming examinations.",
+    "university": "Bina Sarana Informatika",
+    "activity3": "Exploring the <blockchain>Blockchain ecosystem</blockchain> and abusing airdrops for fun to learn about decentralized finance.",
+    "activity4": "Deep diving into <devops>DevOps</devops> practices, specifically focusing on GitHub Actions, CI/CD pipelines, and Docker containerization.",
+    "techStackTitle": "Tech Stack",
+    "techStackDescription": "Here are the technologies and tools I work with or am currently learning:",
+    "tech1": "Working with <frontend>Frontend</frontend> technologies like Next.js, React, TypeScript, and Tailwind CSS to build modern web applications.",
+    "tech2": "Using <elysia>ElysiaJS</elysia> for backend development, still falling in love with <bun>Bun</bun>, along with <drizzle>Drizzle ORM</drizzle> and MySQL/Postgres databases.",
+    "tech3": "Running <arch>Arch Linux</arch> with <hyprland>Hyprland</hyprland> as my workspace environment."
+  },
+  "Footer": {
+    "copyright": "© {year} Dwi. All rights reserved."
+  }
+}
