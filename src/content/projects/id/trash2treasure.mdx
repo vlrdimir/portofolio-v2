@@ -1,0 +1,38 @@
+---
+title: "Sistem Klasifikasi Sampah ML"
+description: "Sistem klasifikasi sampah bertenaga Machine Learning yang membantu pengguna mengidentifikasi dan mengkategorikan material sampah. Dibangun dengan Next.js 15, menampilkan image recognition dan klasifikasi bertenaga AI."
+date: "2025-10-10"
+category:
+  ["Machine Learning", "Next.js", "AI", "Image Recognition", "Full-stack"]
+summary: "Sistem klasifikasi sampah bertenaga ML dengan kemampuan image recognition dan klasifikasi AI"
+readTime: "4 min baca"
+author: "Dwi"
+githubUrl: "https://github.com/vlrdimir/Trash2Treasure-Frontend"
+demoUrl: "https://trash2-treasure-frontend.vercel.app"
+image: "/img/project/trash2treasure.png"
+---
+
+![Trash2Treasure Waste Classification](/img/project/trash2treasure.png)
+
+Membangun aplikasi machine learning yang membantu orang mengidentifikasi dan mengurutkan material sampah dengan benar. Cukup foto sampahmu, dan AI akan memberitahu kategori apa yang dimilikinya. Setelah prediksi, AI memberikan rekomendasi recycle yang dipersonalisasi—menyarankan cara terbaik untuk mendaur ulang atau menggunakan kembali material berdasarkan jenisnya. Ini adalah proyek final ML saya yang menggabungkan image recognition dengan aplikasi web full-stack.
+
+## Fitur Utama
+
+- **Image classification** - Upload foto dan dapatkan identifikasi kategori sampah instan
+- **Rekomendasi recycle AI** - Setelah scan, dapatkan saran daur ulang yang dipersonalisasi berdasarkan jenis material
+- **AI chat assistant** - Tanyakan pertanyaan tentang pembuangan sampah dan daur ulang
+- **User dashboard** - Lacak riwayat klasifikasi dan lihat dampakmu
+- **Educational content** - Pelajari tentang metode pembuangan sampah yang benar
+- **Blog system** - Blog berbasis ContentLayer dengan artikel tentang waste management
+
+## Tech Stack
+
+**Frontend**: Next.js 15 dengan React 19, TypeScript, dan Tailwind CSS. **Backend**: Neon PostgreSQL dengan Drizzle ORM.
+
+**Integrasi ML & AI**:
+
+- **Model Klasifikasi Sampah**: Model klasifikasi sampah yang dilatih khusus di-deploy di Hugging Face untuk image recognition
+- **Rekomendasi Recycle**: Ditenagai oleh GPT-5 nano dari Azure OpenAI, memberikan saran daur ulang yang dipersonalisasi berdasarkan jenis sampah yang diklasifikasikan
+- **AI Chat Assistant**: Mengintegrasikan multiple AI SDKs (Azure, Google, OpenAI) untuk fitur chat
+
+Menggunakan React Query untuk fetching data dan NextAuth untuk autentikasi. Sistem ini menggabungkan computer vision (Hugging Face) dengan generative AI (Azure OpenAI) untuk menciptakan solusi waste management yang lengkap.

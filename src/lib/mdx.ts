@@ -41,8 +41,8 @@ export function getProjectBySlug(locale: string, slug: string): Project | null {
       } as ProjectMetadata,
       content,
     };
-  } catch (error) {
-    console.error(`Error getting project by slug: ${error}`);
+  } catch (error: unknown) {
+    console.error(`Error getting project by slug: ${error as string}`);
     return null;
   }
 }
@@ -73,8 +73,8 @@ export function getAllProjects(locale: string): ProjectMetadata[] {
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
     return projects;
-  } catch (error) {
-    console.error(`Error getting all projects: ${error}`);
+  } catch (error: unknown) {
+    console.error(`Error getting all projects: ${error as string}`);
     return [];
   }
 }

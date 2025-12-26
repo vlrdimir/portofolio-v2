@@ -13,7 +13,7 @@ export default function Header() {
         href="/"
         className="text-foreground hover:text-primary font-serif text-2xl font-bold tracking-tight transition-colors"
       >
-        op<span className="text-primary">.</span>
+        dw<span className="text-primary">.</span>
       </Link>
       <nav className="text-muted-foreground flex items-center gap-6 text-sm font-medium">
         <Link

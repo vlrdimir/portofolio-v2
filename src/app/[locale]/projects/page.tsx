@@ -9,7 +9,13 @@ const projectsList = allProjects as unknown as Project[];
 export default function Projects() {
   const t = useTranslations("ProjectsPage");
   const locale = useLocale();
-  const projects = projectsList.filter((p) => p.locale === locale);
+  const projects = projectsList
+    .filter((p) => p.locale === locale)
+    .sort((a, b) => {
+      const dateA = new Date(a.date).getTime();
+      const dateB = new Date(b.date).getTime();
+      return dateB - dateA; // Sort descending (newest first)
+    });
 
   return (
     <section>
@@ -28,13 +34,27 @@ export default function Projects() {
             key={project.slug}
             className="group border-border/50 hover:border-primary/40 hover:bg-secondary-hover/50 space-y-4 rounded-lg border bg-orange-100/15 p-6 transition-all hover:shadow-sm"
           >
-            <Link
-              href={`/${locale}/projects/${project.slug}`}
-              className="group inline-flex items-center gap-2 text-lg font-semibold text-neutral-900 transition-colors hover:text-neutral-600"
-            >
-              {project.title}
-              <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </Link>
+            <div className="flex items-start justify-between gap-4">
+              <Link
+                href={`/${locale}/projects/${project.slug}`}
+                className="group inline-flex items-center gap-2 text-lg font-semibold text-neutral-900 transition-colors hover:text-neutral-600"
+              >
+                {project.title}
+                <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </Link>
+              {project.date && (
+                <time className="text-sm whitespace-nowrap text-neutral-500">
+                  {new Date(project.date).toLocaleDateString(
+                    locale === "id" ? "id-ID" : "en-US",
+                    {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    },
+                  )}
+                </time>
+              )}
+            </div>
 
             <p className="leading-relaxed text-neutral-800">
               {project.description}

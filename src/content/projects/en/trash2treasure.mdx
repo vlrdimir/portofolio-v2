@@ -1,0 +1,38 @@
+---
+title: "Waste Classification ML System"
+description: "Machine Learning-powered waste classification system that helps users identify and categorize waste materials. Built with Next.js 15, featuring image recognition and AI-powered classification."
+date: "2025-10-10"
+category:
+  ["Machine Learning", "Next.js", "AI", "Image Recognition", "Full-stack"]
+summary: "ML-powered waste classification system with image recognition and AI classification capabilities"
+readTime: "4 min read"
+author: "Dwi"
+githubUrl: "https://github.com/vlrdimir/Trash2Treasure-Frontend"
+demoUrl: "https://trash2-treasure-frontend.vercel.app"
+image: "/img/project/trash2treasure.png"
+---
+
+![Trash2Treasure Waste Classification](/img/project/trash2treasure.png)
+
+Built a machine learning app that helps people identify and sort waste materials correctly. Just snap a photo of your trash, and the AI tells you what category it belongs to. After the prediction, the AI provides personalized recycling recommendations—suggesting the best way to recycle or reuse the material based on its type. It's my final ML project that combines image recognition with a full-stack web application.
+
+## Key Features
+
+- **Image classification** - Upload a photo and get instant waste category identification
+- **AI recycling recommendations** - After scanning, get personalized recycling suggestions based on the material type
+- **AI chat assistant** - Ask questions about waste disposal and recycling
+- **User dashboard** - Track your classification history and see your impact
+- **Educational content** - Learn about proper waste disposal methods
+- **Blog system** - ContentLayer-based blog with articles about waste management
+
+## Tech Stack
+
+**Frontend**: Next.js 15 with React 19, TypeScript, and Tailwind CSS. **Backend**: Neon PostgreSQL with Drizzle ORM.
+
+**ML & AI Integration**:
+
+- **Garbage Classification Model**: Custom-trained waste classification model deployed on Hugging Face for image recognition
+- **Recycling Recommendations**: Powered by GPT-5 nano from Azure OpenAI, providing personalized recycling suggestions based on classified waste types
+- **AI Chat Assistant**: Integrated multiple AI SDKs (Azure, Google, OpenAI) for the chat feature
+
+Used React Query for data fetching and NextAuth for authentication. The system combines computer vision (Hugging Face) with generative AI (Azure OpenAI) to create a complete waste management solution.

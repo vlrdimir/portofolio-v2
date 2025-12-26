@@ -1,7 +1,6 @@
 "use client";
 
 import Giscus from "@giscus/react";
-import { useTheme } from "next-themes";
 
 export default function GiscusComments() {
   // You can use next-themes if you have it, or just default to light/dark based on system or preference
@@ -13,10 +12,10 @@ export default function GiscusComments() {
     <div className="mt-16 border-t pt-10">
       <Giscus
         id="comments"
-        repo="[ENTER REPO HERE]"
-        repoId="[ENTER REPO ID HERE]"
-        category="[ENTER CATEGORY NAME HERE]"
-        categoryId="[ENTER CATEGORY ID HERE]"
+        repo="vlrdimir/portofolio-v2"
+        repoId="R_kgDOQcdxAA"
+        category="General"
+        categoryId="DIC_kwDOQcdxAM4C0QzG"
         mapping="pathname"
         strict="0"
         reactionsEnabled="1"

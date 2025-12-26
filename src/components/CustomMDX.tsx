@@ -1,5 +1,6 @@
 import { MDXLayoutRenderer } from "pliny/mdx-components";
 import React from "react";
+import Image from "next/image";
 
 export const components = {
   h1: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
@@ -53,6 +54,31 @@ export const components = {
       {...props}
     />
   ),
+  img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => {
+    if (!props.src) return null;
+    return (
+      <div className="my-8 mb-8 flex items-center justify-center rounded-lg bg-orange-50/30 p-4">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={props.src}
+          alt={props.alt ?? ""}
+          className="max-h-[600px] max-w-full rounded-lg object-contain"
+          loading="lazy"
+        />
+      </div>
+    );
+  },
+  Image: (props: React.ComponentProps<typeof Image>) => {
+    return (
+      <div className="my-8 mb-8 flex items-center justify-center rounded-lg bg-orange-50/30 p-4">
+        <Image
+          {...props}
+          alt={props.alt ?? ""}
+          className={`${props.className ?? ""} max-h-[600px] max-w-full rounded-lg object-contain`}
+        />
+      </div>
+    );
+  },
 };
 
 export function CustomMDX({ code }: { code: string }) {
