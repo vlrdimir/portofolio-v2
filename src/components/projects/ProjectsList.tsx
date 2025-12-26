@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import type { Project } from "contentlayer/generated";
 import AnimatedLink from "@/components/AnimatedLink";
 
@@ -32,18 +30,20 @@ export default function ProjectsList({ projects, locale }: ProjectsListProps) {
               {project.title}
             </h3>
             <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
-              {project.summary || project.description}
+              {project.summary ?? project.description}
             </p>
             
             <div className="flex flex-wrap gap-2 mb-4">
-              {project.category?.map((cat: string) => (
-                <span
-                  key={cat}
-                  className="px-2 py-1 bg-gray-100 text-gray-700 rounded-full text-xs"
-                >
-                  {cat}
-                </span>
-              ))}
+              {Array.isArray(project.category) ? (
+                project.category.map((cat: string) => (
+                  <span
+                    key={cat}
+                    className="px-2 py-1 bg-gray-100 text-gray-700 rounded-full text-xs"
+                  >
+                    {cat}
+                  </span>
+                ))
+              ) : null}
             </div>
 
             <div className="text-muted-foreground font-mono text-xs">
