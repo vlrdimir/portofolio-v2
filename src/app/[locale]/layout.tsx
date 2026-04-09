@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { QueryProvider } from "@/components/providers/QueryProvider";
 import { Geist, Geist_Mono, Merriweather } from "next/font/google";
 import PageTransition from "@/components/PageTransition";
 import { NextIntlClientProvider } from "next-intl";
@@ -56,15 +57,17 @@ export default async function LocaleLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${merriweather.variable} bg-background text-foreground selection:bg-primary selection:text-primary-foreground antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          <div className="bg-background fixed inset-0 -z-10 h-full w-full [background-image:radial-gradient(#d4c4b5_1px,transparent_1px)] [background-size:20px_20px] opacity-100 dark:[background-image:radial-gradient(#4a4036_1px,transparent_1px)]"></div>
-          <div className="pointer-events-none fixed inset-0 -z-10 h-full w-full [background-image:url('https://www.transparenttextures.com/patterns/aged-paper.png')] opacity-5 mix-blend-multiply"></div>
-          <div className="mx-auto flex min-h-screen max-w-3xl flex-col px-6 py-8 font-sans md:py-12">
-            <Header />
-            <main className="flex-grow">
-              <PageTransition>{children}</PageTransition>
-            </main>
-            <Footer />
-          </div>
+          <QueryProvider>
+            <div className="bg-background fixed inset-0 -z-10 h-full w-full [background-image:radial-gradient(#d4c4b5_1px,transparent_1px)] [background-size:20px_20px] opacity-100 dark:[background-image:radial-gradient(#4a4036_1px,transparent_1px)]"></div>
+            <div className="pointer-events-none fixed inset-0 -z-10 h-full w-full [background-image:url('https://www.transparenttextures.com/patterns/aged-paper.png')] opacity-5 mix-blend-multiply"></div>
+            <div className="mx-auto flex min-h-screen max-w-3xl flex-col px-6 py-8 font-sans md:py-12">
+              <Header />
+              <main className="flex-grow">
+                <PageTransition>{children}</PageTransition>
+              </main>
+              <Footer />
+            </div>
+          </QueryProvider>
         </NextIntlClientProvider>
       </body>
     </html>
