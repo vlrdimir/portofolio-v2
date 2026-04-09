@@ -34,11 +34,10 @@
   },
   "NowPage": {
     "title": "Aktivitas Saat Ini",
-    "updated": "Diperbarui: 19 November 2025",
-    "activity2": "Fokus pada perkuliahan di <university>Bina Sarana Informatika</university> dan persiapan untuk ujian mendatang.",
+    "updated": "Diperbarui: 9 April 2026",
     "activity3": "Mengeksplorasi <blockchain>ekosistem Blockchain</blockchain> dan berburu airdrop untuk kesenangan sembari belajar tentang keuangan terdesentralisasi (DeFi).",
     "activity4": "Mendalami praktik <devops>DevOps</devops>, terutama fokus pada GitHub Actions, pipeline CI/CD, dan containerisasi dengan Docker.",
-    "activity5": "Pengalaman <deployment>deploy</deployment> model dan <mlpipelines>membangun pipeline machine learning</mlpipelines>, dari pelatihan serta evaluasi hingga rollout ke produksi.",
+    "activity5": "Pengalaman <deployment>deploy</deployment> model dan <mlpipelines>membangun pipeline machine learning</mlpipelines>, dari pelatihan serta evaluasi hingga model berjalan andal di lingkungan produksi.",
     "techStackTitle": "Tech Stack",
     "techStackDescription": "Berikut adalah teknologi dan tools yang saya gunakan atau sedang saya pelajari:",
     "tech1": "Fokus utama saya adalah ekosistem penuh <javascript>JavaScript</javascript>: <frontend>frontend</frontend> dengan Next.js, React, TypeScript, dan Tailwind CSS, ditambah backend dengan <elysia>ElysiaJS</elysia> di atas <bun>Bun</bun>, <drizzle>Drizzle ORM</drizzle>, serta MySQL/Postgres.",

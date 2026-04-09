@@ -21,11 +21,6 @@ export default function NowPageClient({
       <div className="space-y-12">
         <ul className="ml-5 list-outside list-disc space-y-4 leading-relaxed text-neutral-800 dark:text-neutral-200">
           <li>
-            {t.rich("activity2", {
-              university: (chunks) => <strong>{chunks}</strong>,
-            })}
-          </li>
-          <li>
             {t.rich("activity3", {
               blockchain: (chunks) => <strong>{chunks}</strong>,
             })}
