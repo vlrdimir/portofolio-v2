@@ -38,11 +38,24 @@
     "activity2": "Fokus pada perkuliahan di <university>Bina Sarana Informatika</university> dan persiapan untuk ujian mendatang.",
     "activity3": "Mengeksplorasi <blockchain>ekosistem Blockchain</blockchain> dan berburu airdrop untuk kesenangan sembari belajar tentang keuangan terdesentralisasi (DeFi).",
     "activity4": "Mendalami praktik <devops>DevOps</devops>, terutama fokus pada GitHub Actions, pipeline CI/CD, dan containerisasi dengan Docker.",
+    "activity5": "Pengalaman <deployment>deploy</deployment> model dan <mlpipelines>membangun pipeline machine learning</mlpipelines>, dari pelatihan serta evaluasi hingga rollout ke produksi.",
     "techStackTitle": "Tech Stack",
     "techStackDescription": "Berikut adalah teknologi dan tools yang saya gunakan atau sedang saya pelajari:",
-    "tech1": "Menggunakan teknologi <frontend>Frontend</frontend> seperti Next.js, React, TypeScript, dan Tailwind CSS untuk membangun aplikasi web modern.",
-    "tech2": "Menggunakan <elysia>ElysiaJS</elysia> untuk backend, yang semakin saya sukai bersama <bun>Bun</bun>, serta <drizzle>Drizzle ORM</drizzle> dan database MySQL/Postgres.",
-    "tech3": "Menjalankan <arch>Arch Linux</arch> dengan <hyprland>Hyprland</hyprland> sebagai lingkungan kerja utama saya."
+    "tech1": "Fokus utama saya adalah ekosistem penuh <javascript>JavaScript</javascript>: <frontend>frontend</frontend> dengan Next.js, React, TypeScript, dan Tailwind CSS, ditambah backend dengan <elysia>ElysiaJS</elysia> di atas <bun>Bun</bun>, <drizzle>Drizzle ORM</drizzle>, serta MySQL/Postgres.",
+    "tech2": "Selain itu saya pakai <python>Python</python> untuk skrip dan tooling. <golang>Go</golang> sedang saya <learning>dalami secara mendalam (masih dipelajari)</learning>.",
+    "tech3": "Menjalankan <arch>Arch Linux</arch> dengan <hyprland>Hyprland</hyprland> sebagai lingkungan kerja utama saya.",
+    "githubTitle": "Aktivitas GitHub",
+    "githubViewProfile": "Lihat profil",
+    "githubPublicRepos": "Repo publik",
+    "githubFollowers": "Pengikut",
+    "githubFollowing": "Mengikuti",
+    "githubLoadError": "Data GitHub tidak bisa dimuat. Coba lagi nanti.",
+    "githubContributionsLastYear": "{count} kontribusi dalam setahun terakhir",
+    "githubContributionsUnavailable": "Riwayat kontribusi tidak bisa dimuat saat ini.",
+    "githubHeatmapAria": "Aktivitas kontribusi GitHub setahun terakhir, ditampilkan sebagai kotak-kotak.",
+    "githubLegendLess": "Sedikit",
+    "githubLegendMore": "Banyak",
+    "githubContributionCellTitle": "{count} kontribusi pada {date}"
   },
   "Footer": {
     "copyright": "© {year} Dwi. Hak cipta dilindungi."

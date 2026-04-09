@@ -40,11 +40,24 @@
     "university": "Bina Sarana Informatika",
     "activity3": "Exploring the <blockchain>Blockchain ecosystem</blockchain> and abusing airdrops for fun to learn about decentralized finance.",
     "activity4": "Deep diving into <devops>DevOps</devops> practices, specifically focusing on GitHub Actions, CI/CD pipelines, and Docker containerization.",
+    "activity5": "Hands-on experience <deployment>deploying</deployment> models and <mlpipelines>building machine learning pipelines</mlpipelines>—from training and evaluation through to production rollout.",
     "techStackTitle": "Tech Stack",
     "techStackDescription": "Here are the technologies and tools I work with or am currently learning:",
-    "tech1": "Working with <frontend>Frontend</frontend> technologies like Next.js, React, TypeScript, and Tailwind CSS to build modern web applications.",
-    "tech2": "Using <elysia>ElysiaJS</elysia> for backend development, still falling in love with <bun>Bun</bun>, along with <drizzle>Drizzle ORM</drizzle> and MySQL/Postgres databases.",
-    "tech3": "Running <arch>Arch Linux</arch> with <hyprland>Hyprland</hyprland> as my workspace environment."
+    "tech1": "My main stack is the full <javascript>JavaScript</javascript> ecosystem: <frontend>frontend</frontend> with Next.js, React, TypeScript, and Tailwind CSS, plus backend with <elysia>ElysiaJS</elysia> on <bun>Bun</bun>, <drizzle>Drizzle ORM</drizzle>, and MySQL/Postgres.",
+    "tech2": "I also work with <python>Python</python> for scripting and tooling. I'm <learning>currently on a deep dive into</learning> <golang>Go</golang>.",
+    "tech3": "Running <arch>Arch Linux</arch> with <hyprland>Hyprland</hyprland> as my workspace environment.",
+    "githubTitle": "GitHub activity",
+    "githubViewProfile": "View profile",
+    "githubPublicRepos": "Public repos",
+    "githubFollowers": "Followers",
+    "githubFollowing": "Following",
+    "githubLoadError": "Could not load GitHub data right now. Please try again later.",
+    "githubContributionsLastYear": "{count} contributions in the last year",
+    "githubContributionsUnavailable": "Contribution history is unavailable right now.",
+    "githubHeatmapAria": "GitHub contribution activity over the last year, shown as a grid of squares.",
+    "githubLegendLess": "Less",
+    "githubLegendMore": "More",
+    "githubContributionCellTitle": "{count} contributions on {date}"
   },
   "Footer": {
     "copyright": "© {year} Dwi. All rights reserved."
