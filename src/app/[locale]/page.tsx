@@ -13,8 +13,7 @@ export default function Portfolio() {
 
   return (
     <>
-      {/* Welcome Section */}
-      <section className="mb-20">
+      <section className="mb-24" id="projects">
         <h1 className="mb-8 font-serif text-4xl font-bold tracking-tight md:text-5xl">
           {t("title")}
           <span className="text-primary">.</span>
@@ -22,19 +21,6 @@ export default function Portfolio() {
 
         <div className="text-foreground space-y-6 leading-relaxed">
           <p className="text-lg">{t("greeting")}</p>
-          <p>{t("intro1")}</p>
-          <p>{t("intro2")}</p>
-        </div>
-      </section>
-
-      {/* Journey Section */}
-      <section className="mb-24" id="projects">
-        <h2 className="mb-8 font-serif text-2xl font-bold tracking-tight">
-          {t("journeyTitle")}
-          <span className="text-primary">.</span>
-        </h2>
-        {/* Replaced list format with a narrative storytelling approach */}
-        <div className="text-foreground space-y-6 leading-relaxed">
           <p>
             {t.rich("journey1", {
               phpNative: (chunks) => <Highlight>{chunks}</Highlight>,

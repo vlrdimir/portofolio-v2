@@ -17,11 +17,6 @@ export default function Now() {
       <div className="space-y-12">
         <ul className="ml-5 list-outside list-disc space-y-4 leading-relaxed text-neutral-800">
           <li>
-            {t.rich("activity1", {
-              valorant: (chunks) => <strong>{chunks}</strong>,
-            })}
-          </li>
-          <li>
             {t.rich("activity2", {
               university: (chunks) => <strong>{chunks}</strong>,
             })}

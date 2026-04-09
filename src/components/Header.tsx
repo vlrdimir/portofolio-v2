@@ -28,12 +28,6 @@ export default function Header() {
         >
           {t("now")}
         </Link>
-        <Link
-          href="/about"
-          className="hover:text-primary hover:decoration-primary transition-colors hover:underline hover:decoration-wavy"
-        >
-          {t("about")}
-        </Link>
         <LanguageSwitcher />
       </nav>
     </header>
