@@ -3,8 +3,10 @@
 import { useTranslations } from "next-intl";
 
 export default function NowPageClient({
+  musicHistorySection,
   githubSection,
 }: {
+  musicHistorySection: React.ReactNode;
   githubSection: React.ReactNode;
 }) {
   const t = useTranslations("NowPage");
@@ -77,6 +79,8 @@ export default function NowPageClient({
             </li>
           </ul>
         </div>
+
+        {musicHistorySection}
       </div>
     </section>
   );

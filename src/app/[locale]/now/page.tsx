@@ -2,6 +2,11 @@ import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 
 import { GitHubActivitySection } from "@/components/now/GitHubActivitySection";
 import { getGitHubActivityQueryOptions } from "@/components/now/github-activity-query";
+import { MusicHistorySection } from "@/components/now/MusicHistorySection";
+import {
+  getMusicHistoryQueryOptions,
+  LOCALHOST_MUSIC_HISTORY_ENDPOINT,
+} from "@/components/now/music-history-query";
 import { getGitHubActivityData } from "@/lib/github-activity";
 import { makeQueryClient } from "@/lib/tanstack-query";
 
@@ -15,18 +20,24 @@ export default async function NowPage({
   const { locale } = await params;
   const queryClient = makeQueryClient();
 
-  await queryClient.prefetchQuery({
-    ...getGitHubActivityQueryOptions(),
-    queryFn: getGitHubActivityData,
-  });
+  await Promise.all([
+    queryClient.prefetchQuery({
+      ...getGitHubActivityQueryOptions(),
+      queryFn: getGitHubActivityData,
+    }),
+    queryClient.prefetchQuery(
+      getMusicHistoryQueryOptions(LOCALHOST_MUSIC_HISTORY_ENDPOINT),
+    ),
+  ]);
+
+  const dehydratedState = dehydrate(queryClient);
 
   return (
-    <NowPageClient
-      githubSection={
-        <HydrationBoundary state={dehydrate(queryClient)}>
-          <GitHubActivitySection locale={locale} />
-        </HydrationBoundary>
-      }
-    />
+    <HydrationBoundary state={dehydratedState}>
+      <NowPageClient
+        musicHistorySection={<MusicHistorySection />}
+        githubSection={<GitHubActivitySection locale={locale} />}
+      />
+    </HydrationBoundary>
   );
 }
